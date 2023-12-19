@@ -6,7 +6,6 @@ from colorama import Fore, Back, Style
 from tkinter import *
 from tkinter import messagebox as msg
 
-#Code functions base
 
 def debux():
     deb_command = input('--> ')
@@ -49,29 +48,40 @@ def debux():
             start()
         else:
             debux()
+    else:
+        print(Fore.RED+'An unexpected command!')
+        print(Style.RESET_ALL)
+        debux()
 
+def su():
+    path = input('Enter file directory: ')
+    if path.lower() == 'exit':
+        start()
+    else:
+        pass
+    def su_system(path):
+        """
+        Функция для рекурсивного вывода структуры папок и файлов в указанном пути с нумерацией файлов.
+        """
+        indent=''
+        # Выводим текущую папку
+        print(f"{indent}[{os.path.basename(path)}/]")
+
+        # Итерируем по всем элементам в текущей папке
+        for idx, item in enumerate(os.listdir(path), start=1):
+            item_path = os.path.join(path, item)
+
+            # Проверяем, является ли элемент папкой
+            if os.path.isdir(item_path):
+                # Если это папка, вызываем функцию рекурсивно
+                su_system(item_path)
+            else:
+                # Если это файл, выводим его с номером
+                print(f"{indent}  {idx}-{item}")
+
+    su_system(path)
+    su()
     
-
-
-def su(path, indent=''):
-    """
-    Функция для рекурсивного вывода структуры папок и файлов в указанном пути с нумерацией файлов.
-    """
-    # Выводим текущую папку
-    print(f"{indent}[{os.path.basename(path)}/]")
-
-    # Итерируем по всем элементам в текущей папке
-    for idx, item in enumerate(os.listdir(path), start=1):
-        item_path = os.path.join(path, item)
-
-        # Проверяем, является ли элемент папкой
-        if os.path.isdir(item_path):
-            # Если это папка, вызываем функцию рекурсивно
-            su(item_path, indent + '  ')
-        else:
-            # Если это файл, выводим его с номером
-            print(f"{indent}  {idx}-{item}")
-
 def start():
     command = input('Enter based command: ')
     debug_file(command)
@@ -90,9 +100,8 @@ def start():
         if yesno == True:
             print(Fore.GREEN+'Done')
             time.sleep(0.4)
-            path = input('Enter file directory: ')
-            su(path)
-            debug_file()
+            su()
+            debug_file(command)
         else:
             print(Fore.RED+'Connecting ERROR, aborting..')
             print(Style.RESET_ALL)
@@ -121,8 +130,6 @@ def debug_file(command):
     else:
         with open(file_name, 'w') as file:
             file.write(f'{now} Starting {command.upper()}-command for {time.time()}, OS Version :{os_version.major}.{os_version.minor}')
-
-
 
 def system_info():
     """
