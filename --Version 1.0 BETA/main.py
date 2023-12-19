@@ -53,6 +53,7 @@ def debux():
         print(Style.RESET_ALL)
         debux()
 
+
 def su():
     path = input('Enter file directory: ')
     if path.lower() == 'exit':
@@ -80,6 +81,7 @@ def su():
                 print(f"{indent}  {idx}-{item}")
 
     su_system(path)
+    print()
     su()
     
 def start():
@@ -117,6 +119,7 @@ def start():
     else:
         print(Fore.RED+'Unknown Command!')
         print(Style.RESET_ALL)
+
 
 def debug_file(command):
     file_name = 'LocalDeb_Temp-USER.txt'
