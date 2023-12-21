@@ -1,5 +1,5 @@
 # TEmui System Tuner Overview
-** TEmui System Tuner is a Python script designed for LOCAL PCs. It emulates the Windows 10 console with a Windows 11-like kernel. The script provides a set of commands for system management and debugging. **
+**TEmui System Tuner is a Python script designed for LOCAL PCs. It emulates the Windows 10 console with a Windows 11-like kernel. The script provides a set of commands for system management and debugging.**
 
 ## Features :
           Fast and workable updates as usualy!
