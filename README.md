@@ -5,8 +5,7 @@
 
           Fast and workable updates as usualy!
           
-          Command Emulator: Use the script to emulate Windows console commands.
-          Debug Xposed Mode: Debug Xposed for Termux emulation.
+          DebugX Mode: Core for Termux emulation.
           System Unity Mode (SU): Check file paths and contents.
           Device Info: View information about the connected device.
           Exit Command: Easily exit the script.
