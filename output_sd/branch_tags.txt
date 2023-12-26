@@ -1,0 +1,14 @@
+branc{
+
+		code;python3
+		script;main.py
+		branch;tag;TEmui
+		.git{
+			os-amb{
+				
+				windows_wer;10.0,11.0,8.0	
+				
+				}
+
+		    }
+}
