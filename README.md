@@ -3,34 +3,35 @@
 
 ## Features :
 
-          Fast and workable updates as usualy!
+>Fast and workable updates as usualy!
           
-          DebugX Mode: Core for Termux emulation.
-          System Unity Mode (SU): Check file paths and contents.
-          Device Info: View information about the connected device.
-          Exit Command: Easily exit the script.
+- DebugX Mode: Core for Termux emulation.
+
+- System Unity Mode (SU): Check file paths and contents.
+
+- Device Info: View information about the connected device.
+
+- Exit Command: Easily exit the script.
 
 ## Installing:
 
-          1.Install Latest .exe file from Releases
-          2.Run file and enjoy it ;)
+1.Install Latest `.exe` file from [Releases](https://github.com/joumsadd/TEmui/releases)
+
+2.Run file and enjoy it ;)
           
 ## Commands:
 
-          Help: Display the list of available commands.
-          SU: Enter System Unity Mode to check file paths and contents.
-          Info: Display device information.
-          Debux: Enter Debug Xposed Mode.
-          Exit: Exit the script.
-          
-## Debugging:
+>Help: Display the list of available commands.
 
-          The script keeps a debugging log in LocalDeb_Temp-USER.txt. This log records the timestamp, executed command, and the OS version.
+- `SU` : Enter System Unity Mode to check file paths and contents.
 
-## Contribution:
+- `Info` : Display device information.
 
-          Feel free to contribute by submitting issues or pull requests. Your feedback is valuable!
+- `Debux` : Enter Debug Xposed Mode.
+
+- `Exit` : Exit the script.
 
 ## License:
 
-          This project is licensed under the MIT License.
+**This project is licensed under the MIT License.**
+**Maden with heart❤**
