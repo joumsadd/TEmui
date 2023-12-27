@@ -1,6 +1,0 @@
-Lattest_package(info) as 1.0.1839.231223.0
-port(python=True, complain='0', autoreset='True'):
-{
-							start; True
-							lower.case(delete); VS code
-}
