@@ -1,4 +1,4 @@
-![Preview]([https://github.com/joumsadd/TEmui/blob/main/manifest/prewiew.png])
+![Screenshot](https://github.com/joumsadd/TEmui/blob/main/manifest/prewiew.png)
 **TEmui System Tuner is a Python script designed for LOCAL PCs. It emulates the Windows 10 console with a Windows 11-like kernel. The script provides a set of commands for system management and debugging.**
 
 ## Features :
